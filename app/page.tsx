@@ -2,14 +2,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 import ButtonLink from "@/app/_components/ButtonLink";
-
-type News = {
-  id: string;
-  title: string;
-  category: { name: string };
-  publishedAt: string;
-  createdAt: string;
-};
+import { News } from "@/app/_libs/microcms";
 
 const data: {
   contents: News[];
