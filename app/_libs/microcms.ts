@@ -1,3 +1,4 @@
+import { revalidate } from "@/app/news/page";
 import { createClient } from "microcms-js-sdk";
 import type {
   MicroCMSQueries,
@@ -61,6 +62,11 @@ export const getNewsDetail = async (
     endpoint: "news",
     contentId,
     queries,
+    customRequestInit: {
+      next: {
+        revalidate: queries?.draftKey === undefined ? 60 : 0,
+      },
+    },
   });
   return detailData;
 };
