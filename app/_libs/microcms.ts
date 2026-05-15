@@ -1,4 +1,3 @@
-import { revalidate } from "@/app/news/page";
 import { createClient } from "microcms-js-sdk";
 import type {
   MicroCMSQueries,
