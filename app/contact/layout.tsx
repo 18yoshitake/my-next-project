@@ -1,6 +1,11 @@
 import Hero from "@/app/_components/Hero";
 import Sheet from "@/app/_components/Sheet";
+import { title } from "process";
 import React from "react";
+
+export const metadata = {
+  title: "お問い合わせ",
+};
 
 type Props = {
   children: React.ReactNode;
