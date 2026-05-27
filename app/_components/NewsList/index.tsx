@@ -5,6 +5,7 @@ import Category from "../Category";
 import Date from "../Date";
 import { News } from "@/app/_libs/microcms";
 import classNames from "classnames";
+import { freemem } from "os";
 
 type Props = {
   news: News[];
