@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "「Next.js+ヘッドレスCMSではじめる!かんたん・モダンWebサイト制作入門」で作成されるサイトです。",
-  images: ["/ogp.png"],
+
   openGraph: {
     title: "シンプルなコーポレートサイト",
     description:
